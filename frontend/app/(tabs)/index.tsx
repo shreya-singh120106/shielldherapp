@@ -4,6 +4,7 @@ import {
   Text,
   StyleSheet,
   TouchableOpacity,
+  TextInput,
   Animated,
   Easing,
   Modal,
@@ -19,6 +20,7 @@ import { Feather, Ionicons } from '@expo/vector-icons';
 import { theme } from '../../src/theme';
 import GlassCard from '../../src/GlassCard';
 import FakeStatusBar from '../../src/StatusBarFake';
+import PressableScale from '../../src/PressableScale';
 
 const { width } = Dimensions.get('window');
 
@@ -64,6 +66,8 @@ export default function Dashboard() {
   const [sosOpen, setSosOpen] = useState(false);
   const [countdown, setCountdown] = useState(5);
   const [alerted, setAlerted] = useState(false);
+  const [userName, setUserName] = useState('Priya');
+  const [editingName, setEditingName] = useState(false);
 
   useEffect(() => {
     if (!sosOpen) return;
@@ -120,9 +124,42 @@ export default function Dashboard() {
         <View style={styles.headerRow}>
           <View>
             <Text style={styles.hello}>Good morning</Text>
-            <Text style={styles.name} testID="dashboard-name">
-              Aarya <Text style={{ color: theme.wellness }}>✦</Text>
-            </Text>
+            <View style={styles.nameRow}>
+              {editingName ? (
+                <TextInput
+                  style={styles.nameInput}
+                  value={userName}
+                  onChangeText={setUserName}
+                  autoFocus
+                  selectTextOnFocus
+                  maxLength={18}
+                  placeholder="Your name"
+                  placeholderTextColor={theme.textMuted}
+                  onBlur={() => setEditingName(false)}
+                  onSubmitEditing={() => setEditingName(false)}
+                  returnKeyType="done"
+                  testID="name-input"
+                />
+              ) : (
+                <Text style={styles.name} testID="dashboard-name">
+                  {userName || 'You'}{' '}
+                  <Text style={{ color: theme.wellness }}>✦</Text>
+                </Text>
+              )}
+              <PressableScale
+                onPress={() => setEditingName((v) => !v)}
+                style={styles.editBtn}
+                testID="name-edit-btn"
+              >
+                <View style={styles.editBtnInner}>
+                  <Feather
+                    name={editingName ? 'check' : 'edit-2'}
+                    size={12}
+                    color={editingName ? theme.travel : theme.textSecondary}
+                  />
+                </View>
+              </PressableScale>
+            </View>
           </View>
 
           <TouchableOpacity
@@ -406,6 +443,38 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     letterSpacing: -0.5,
     marginTop: 4,
+  },
+  nameRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginTop: 4,
+  },
+  nameInput: {
+    color: theme.textPrimary,
+    fontSize: 28,
+    fontWeight: '700',
+    letterSpacing: -0.5,
+    minWidth: 140,
+    maxWidth: 200,
+    paddingVertical: 0,
+    paddingHorizontal: 8,
+    borderWidth: 0.5,
+    borderColor: 'rgba(255,255,255,0.55)',
+    borderRadius: 10,
+    backgroundColor: 'rgba(255,255,255,0.04)',
+    ...(Platform.OS === 'web' ? ({ outlineStyle: 'none' } as any) : {}),
+  },
+  editBtn: {},
+  editBtnInner: {
+    width: 26,
+    height: 26,
+    borderRadius: 13,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'rgba(255,255,255,0.06)',
+    borderWidth: 0.5,
+    borderColor: 'rgba(255,255,255,0.55)',
   },
   subtitle: {
     color: theme.textSecondary,
