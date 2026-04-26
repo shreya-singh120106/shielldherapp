@@ -35,10 +35,10 @@ The `eas.json` file is pre-configured with three build profiles:
 | Profile | Output | Use Case |
 |---------|--------|----------|
 | `development` | Debug APK | Testing with dev tools |
-| `preview` | Release APK | **Hackathon demo** — install directly on phone |
+| `preview` | Release APK | **Prototype testing** — install directly on phone |
 | `production` | Signed AAB | **Play Store** submission |
 
-## Building the APK (Hackathon Demo)
+## Building the APK (Alpha Testing)
 
 ### Quick Build
 ```bash
@@ -130,7 +130,7 @@ The preview APK includes all architectures. Production AAB is optimized per-devi
 ```
 ┌─────────────────────────────────────────────────┐
 │  eas build --profile preview --platform android │
-│  → Installable APK for hackathon demo           │
+│  → Installable APK for prototype testing         │
 │  → Direct download link + QR code               │
 │  → ~50-80 MB                                    │
 ├─────────────────────────────────────────────────┤
