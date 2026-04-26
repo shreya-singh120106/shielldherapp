@@ -6,11 +6,11 @@
 ### **One platform. Three shields. Zero compromise.**
 
 [![License](https://img.shields.io/badge/License-Proprietary-CD1F32?style=for-the-badge)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Hackathon--Winning-00FF66?style=for-the-badge)](https://github.com/shreya-singh120106/shielldherapp)
+[![Status](https://img.shields.io/badge/Status-v1.0.0--Stable-00FF66?style=for-the-badge)](https://github.com/shreya-singh120106/shielldherapp)
 [![React Native](https://img.shields.io/badge/Frontend-React_Native-00F0FF?style=for-the-badge&logo=react)](https://reactnative.dev/)
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI-FF758F?style=for-the-badge&logo=fastapi)](https://fastapi.tiangolo.com/)
 
-**The world’s first AI-powered women's safety & empowerment ecosystem. Driven by Claude Sonnet.**
+**The world’s first AI-powered women's safety & empowerment ecosystem.**
 
 [Explore Features](#-the-three-shields) • [Quick Start](#-quick-start) • [Live Demo](#-experience-the-prototype) • [Architecture](#-architecture)
 
@@ -22,11 +22,29 @@
 
 ## 📲 Experience the Prototype
 
+<div align="center">
+
 Scan the QR code below using the **Expo Go** app (Android) or your **Camera app** (iOS) to experience the ShieldHer interface live on your device.
 
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://expo.dev/@shreya_singh4593/shieldher-new&color=00F0FF&bgcolor=0D0B14" width="200" style="border-radius: 20px; border: 2px solid #00F0FF; padding: 10px;" />
+<br />
 
-**[View on Expo Dev](https://expo.dev/@shreya_singh4593/shieldher-new)**
+| Launch Instant Prototype | Reliable Build Options |
+| :--- | :--- |
+| <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://expo.dev/@shreya_singh4593/shieldher&color=00F0FF&bgcolor=0D0B14" width="220" style="border-radius: 20px; border: 2px solid #00F0FF; padding: 10px;" /> | <br /> [![Expo Go](https://img.shields.io/badge/Open_in-Expo_Go-00F0FF?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/@shreya_singh4593/shieldher) <br /><br /> [![Direct APK](https://img.shields.io/badge/Download-Direct_APK-00FF66?style=for-the-badge&logo=android&logoColor=white)](https://expo.dev/accounts/shreya_singh4593/projects/shieldher/builds) <br /><br /> *Building the latest shield...* |
+
+**[View Full Project Dashboard](https://expo.dev/@shreya_singh4593/shieldher)**
+
+---
+
+This project is deployed using Expo for instant testing.
+
+- **Scan QR** to run live app
+- **Works on Android/iOS** via Expo Go
+- **No installation** required
+
+⚠️ *If loading fails, ensure a stable internet connection.*
+
+</div>
 
 </div>
 
