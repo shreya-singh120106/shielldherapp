@@ -24,6 +24,11 @@
         "ACCESS_COARSE_LOCATION",
         "VIBRATE",
         "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "VIBRATE",
+        "INTERNET",
         "ACCESS_NETWORK_STATE"
       ],
       "splash": {
@@ -67,6 +72,12 @@
       },
       "router": {}
     },
-    "owner": "shreya_singh4593"
+    "owner": "shreya_singh4593",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/b99b6f0e-c27b-41d8-8966-e3a570506425"
+    }
   }
 }
