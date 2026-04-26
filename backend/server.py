@@ -23,7 +23,7 @@ mongo_url = os.environ["MONGO_URL"]
 client = AsyncIOMotorClient(mongo_url)
 db = client[os.environ["DB_NAME"]]
 
-EMERGENT_LLM_KEY = os.environ.get("EMERGENT_LLM_KEY", "")
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", os.environ.get("EMERGENT_LLM_KEY", ""))
 
 app = FastAPI(title="ShieldHer API")
 api_router = APIRouter(prefix="/api")
@@ -95,10 +95,10 @@ def _extract_json(text: str) -> dict:
 
 
 async def _llm_chat(system_message: str, user_text: str, session_id: str) -> str:
-    if not EMERGENT_LLM_KEY:
-        raise HTTPException(status_code=500, detail="EMERGENT_LLM_KEY not configured")
+    if not ANTHROPIC_API_KEY:
+        raise HTTPException(status_code=500, detail="ANTHROPIC_API_KEY not configured")
     chat = LlmChat(
-        api_key=EMERGENT_LLM_KEY,
+        api_key=ANTHROPIC_API_KEY,
         session_id=session_id,
         system_message=system_message,
     ).with_model("anthropic", "claude-sonnet-4-5-20250929")

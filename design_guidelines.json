@@ -186,8 +186,8 @@
     }
   },
   "images": {
-    "obsidian_glass_bg": "https://static.prod-images.emergentagent.com/jobs/f23f9469-da8c-4d1c-b0af-6de7b8eadfc2/images/0d0abe77f90752c269f6b9c409aaea17e9598397ffedadc0e3112d41b7b53349.png",
-    "wellness_coral_bg": "https://static.prod-images.emergentagent.com/jobs/f23f9469-da8c-4d1c-b0af-6de7b8eadfc2/images/5893988904a347a3f78121be0578896251be65632530b4a5e2fc2a7923e170de.png",
+    "obsidian_glass_bg": "local_gradient:#0D0B14->#14101F",
+    "wellness_coral_bg": "local_gradient:#2A1020->#1A0A18->#0D0B14",
     "mentor_sarah": "https://images.unsplash.com/photo-1758600587839-56ba05596c69?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBhc2lhbiUyMHdvbWFuJTIwcG9ydHJhaXQlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NzY4Njg4NjR8MA&ixlib=rb-4.1.0&q=85",
     "dark_map": "https://images.unsplash.com/photo-1768270946541-c3e1cfdf80f9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwbWFwJTIwbmlnaHQlMjBjaXR5JTIwc3RyZWV0fGVufDB8fHx8MTc3Njg2ODg4MXww&ixlib=rb-4.1.0&q=85"
   },

@@ -5,7 +5,6 @@ import {
   StyleSheet,
   ScrollView,
   TouchableOpacity,
-  ImageBackground,
   ActivityIndicator,
   Modal,
   Platform,
@@ -21,8 +20,7 @@ import GlassCard from '../src/GlassCard';
 import PressableScale from '../src/PressableScale';
 
 const BACKEND_URL = process.env.EXPO_PUBLIC_BACKEND_URL as string;
-const BG_IMG =
-  'https://static.prod-images.emergentagent.com/jobs/f23f9469-da8c-4d1c-b0af-6de7b8eadfc2/images/5893988904a347a3f78121be0578896251be65632530b4a5e2fc2a7923e170de.png';
+const BG_IMG = null; // Using gradient-only background — no external dependency
 
 type Insight = {
   title: string;
@@ -287,9 +285,14 @@ export default function WellnessHub() {
 
   return (
     <View style={styles.root} testID="wellness-hub">
-      <ImageBackground source={{ uri: BG_IMG }} style={StyleSheet.absoluteFill}>
-        <LinearGradient colors={['rgba(13,11,20,0.7)', 'rgba(13,11,20,0.95)']} style={StyleSheet.absoluteFill} />
-      </ImageBackground>
+      {/* Rich gradient background replacing external image */}
+      <LinearGradient
+        colors={['#2A1020', '#1A0A18', '#0D0B14']}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 1 }}
+        style={StyleSheet.absoluteFill}
+      />
+      <LinearGradient colors={['rgba(13,11,20,0.3)', 'rgba(13,11,20,0.85)']} style={StyleSheet.absoluteFill} />
 
       <View style={styles.glowOrb}>
         <LinearGradient colors={['rgba(255,117,143,0.45)', 'rgba(13,11,20,0)']} style={StyleSheet.absoluteFill} />

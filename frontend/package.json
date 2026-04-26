@@ -4,11 +4,13 @@
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
-    "reset-project": "node ./scripts/reset-project.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "build:apk": "eas build --profile preview --platform android",
+    "build:aab": "eas build --profile production --platform android",
+    "build:dev": "eas build --profile development --platform android"
   },
   "dependencies": {
     "@babel/runtime": "^7.20.6",

@@ -6,7 +6,7 @@ ShieldHer is a high-fidelity, production-ready React Native (Expo) mobile UI pro
 ## Tech Stack
 - **Frontend:** Expo SDK 54, expo-router (file-based routing), react-native-reanimated, react-native-svg, expo-blur, expo-linear-gradient
 - **Backend:** FastAPI + MongoDB (motor)
-- **AI:** Claude Sonnet 4.5 via Emergent LLM key (`emergentintegrations`)
+- **AI:** Claude Sonnet 4.5 via Anthropic API
 
 ## Design Language
 - **Theme:** Ultra-modern glassmorphism on deep obsidian (#0D0B14)

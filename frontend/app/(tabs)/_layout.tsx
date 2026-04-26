@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     alignItems: 'center',
     paddingHorizontal: 16,
-    paddingBottom: 24,
+    paddingBottom: 16,
   },
   barOuter: {
     width: '100%',

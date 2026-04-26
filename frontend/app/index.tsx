@@ -58,11 +58,11 @@ export default function SplashGate() {
           useNativeDriver: true,
         }),
       ]).start();
-    }, 2200);
+    }, 1800);
 
     const t2 = setTimeout(() => {
       router.replace('/(tabs)');
-    }, 5200);
+    }, 4000);
 
     return () => {
       clearTimeout(t1);

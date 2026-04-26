@@ -81,7 +81,7 @@ function DesktopFrame({ children }: { children: React.ReactNode }) {
         <View style={frame.tipRow}>
           <Feather name="zap" size={12} color="#FF758F" />
           <Text style={frame.tipText}>
-            Tip — install ShieldHer from your browser menu to launch it like a native app.
+            ShieldHer — AI-powered safety, digital protection, and career growth for women.
           </Text>
         </View>
       </View>
@@ -101,7 +101,7 @@ function DesktopFrame({ children }: { children: React.ReactNode }) {
           {/* Screen */}
           <View style={frame.screen}>{children}</View>
         </View>
-        <Text style={frame.deviceLabel}>iPhone 15 Pro · ShieldHer Demo</Text>
+        <Text style={frame.deviceLabel}>ShieldHer · Live Demo</Text>
       </View>
     </View>
   );
