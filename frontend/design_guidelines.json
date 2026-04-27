@@ -1,0 +1,198 @@
+{
+  "theme": "dark",
+  "archetype": "Hybrid: Jewel & Luxury (5) + Electric & Neon (7)",
+  "concept": "Cyber-Organic Fusion. A deeply protective, luxurious obsidian shell accented by tactical neon for safety, cyber blue for security, and warm organic coral for wellness. Glassmorphism ensures transparency and depth without clutter.",
+  "colors": {
+    "background": {
+      "default": "#0D0B14",
+      "surface_glass": "rgba(255, 255, 255, 0.03)",
+      "surface_glass_heavy": "rgba(13, 11, 20, 0.7)",
+      "modal_overlay": "rgba(0, 0, 0, 0.6)"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A0A0B0",
+      "disabled": "#5A5A6A",
+      "inverse": "#0D0B14"
+    },
+    "gradients": {
+      "travel_neon": ["#00FF66", "#00CC52"],
+      "cyber_blue": ["#00F0FF", "#0088FF"],
+      "wellness_coral": ["#FF758F", "#FF4D6D"],
+      "sos_alert": ["#FF3B30", "#FF1A1A"]
+    },
+    "accents": {
+      "travel": "#00FF66",
+      "cyber": "#00F0FF",
+      "wellness": "#FF758F",
+      "sos": "#FF3B30",
+      "border": "rgba(255, 255, 255, 0.1)"
+    }
+  },
+  "typography": {
+    "families": {
+      "heading": "Outfit, SpaceGrotesk, or System-Bold",
+      "body": "Manrope, Inter, or System-Regular"
+    },
+    "sizes": {
+      "h1": { "fontSize": 48, "lineHeight": 52, "letterSpacing": -1.5, "fontWeight": "800" },
+      "h2": { "fontSize": 32, "lineHeight": 38, "letterSpacing": -1, "fontWeight": "700" },
+      "h3": { "fontSize": 24, "lineHeight": 30, "letterSpacing": -0.5, "fontWeight": "600" },
+      "h4": { "fontSize": 20, "lineHeight": 26, "letterSpacing": -0.25, "fontWeight": "600" },
+      "body": { "fontSize": 16, "lineHeight": 24, "letterSpacing": 0, "fontWeight": "400" },
+      "caption": { "fontSize": 12, "lineHeight": 16, "letterSpacing": 1, "fontWeight": "500", "textTransform": "uppercase" }
+    }
+  },
+  "spacing": {
+    "2": 8,
+    "4": 16,
+    "6": 24,
+    "8": 32,
+    "12": 48,
+    "16": 64,
+    "24": 96
+  },
+  "glassmorphism_recipes": {
+    "panel": {
+      "component": "BlurView",
+      "tint": "dark",
+      "intensity": 60,
+      "style": {
+        "backgroundColor": "rgba(20, 18, 28, 0.3)",
+        "borderColor": "rgba(255, 255, 255, 0.12)",
+        "borderWidth": 1,
+        "borderRadius": 24,
+        "overflow": "hidden"
+      }
+    },
+    "heavy_blur": {
+      "component": "BlurView",
+      "tint": "dark",
+      "intensity": 100,
+      "style": {
+        "backgroundColor": "rgba(13, 11, 20, 0.5)",
+        "borderColor": "rgba(255, 255, 255, 0.08)",
+        "borderWidth": 1,
+        "borderRadius": 32
+      }
+    },
+    "toxic_blur": {
+      "component": "BlurView",
+      "tint": "light",
+      "intensity": 80,
+      "style": {
+        "backgroundColor": "rgba(255, 59, 48, 0.1)",
+        "borderColor": "rgba(255, 59, 48, 0.3)",
+        "borderWidth": 1,
+        "borderRadius": 16
+      }
+    }
+  },
+  "components": {
+    "bottom_navigation": {
+      "position": "absolute",
+      "bottom": 32,
+      "left": 24,
+      "right": 24,
+      "height": 72,
+      "recipe": "heavy_blur",
+      "flexDirection": "row",
+      "justifyContent": "space-around",
+      "alignItems": "center",
+      "test_id": "bottom-nav"
+    },
+    "sos_button": {
+      "width": 140,
+      "height": 140,
+      "borderRadius": 70,
+      "backgroundColor": "rgba(255,59,48,0.1)",
+      "borderWidth": 1,
+      "borderColor": "rgba(255,59,48,0.5)",
+      "inner_pulse": "rgba(255,59,48,0.3)",
+      "shadow": "0px 0px 40px rgba(255,59,48,0.4)",
+      "test_id": "sos-button"
+    },
+    "wellness_badge": {
+      "position": "absolute",
+      "top": 48,
+      "right": 24,
+      "width": 48,
+      "height": 48,
+      "borderRadius": 24,
+      "recipe": "panel",
+      "borderGradient": "wellness_coral",
+      "test_id": "wellness-badge"
+    },
+    "feature_card": {
+      "recipe": "panel",
+      "padding": 24,
+      "marginBottom": 16,
+      "test_id": "feature-card"
+    }
+  },
+  "motion_interactions": {
+    "sos_pulse": "Continuous looping scale (1 to 1.3) and opacity (0.8 to 0) on 2-3 absolute positioned background rings.",
+    "wellness_modal": "Slide up from bottom with spring physics (damping 20, stiffness 90). Full screen cover.",
+    "page_transition": "Fade and slight scale-down of outgoing screen, fade and scale-up (0.95 -> 1.0) of incoming screen.",
+    "toxic_message_reveal": "On tap, animate blur intensity from 80 to 0 over 300ms, change border from red to default."
+  },
+  "icons": {
+    "library": "@expo/vector-icons",
+    "mapping": {
+      "home": { "family": "Feather", "name": "home" },
+      "travel": { "family": "Feather", "name": "map-pin" },
+      "cyber": { "family": "Feather", "name": "shield" },
+      "growth": { "family": "Feather", "name": "briefcase" },
+      "wellness": { "family": "Ionicons", "name": "water-outline" },
+      "bluetooth_mesh": { "family": "Feather", "name": "bluetooth" },
+      "warning": { "family": "Feather", "name": "alert-triangle" }
+    }
+  },
+  "screens": {
+    "splash_1": {
+      "background": "obsidian_glass_bg image (full screen absolute)",
+      "layout": "Centered",
+      "content": "Glowing ShieldHer Logo, tag 'One platform. Three shields. Zero compromise.' in Caption font.",
+      "duration": "2000ms, then fade to Splash 2"
+    },
+    "splash_2": {
+      "background": "obsidian_glass_bg image",
+      "layout": "Centered",
+      "content": "'Empowering your journey with AI-driven safety, digital protection, and career growth.' in H3 font.",
+      "duration": "2500ms, then fade to Dashboard"
+    },
+    "dashboard": {
+      "layout": "ScrollView with bottom padding 120",
+      "header": "Wellness badge absolute top right",
+      "center": "Massive Smart SOS button vertically/horizontally centered in upper half of view.",
+      "cards": "Three bento-style glass cards below SOS: Travel (Neon green accent), Cyber (Blue accent), Growth (White accent)."
+    },
+    "travel_map": {
+      "background": "dark_map_image absolute fill",
+      "overlay": "Top pill: 'Offline Mode Active' with glassmorphism + bluetooth icon. Bottom Sheet: 'Safety Score 87/100' glassmorphism card."
+    },
+    "cyber_inbox": {
+      "layout": "FlatList with Top Padding",
+      "items": "Standard message (clear text, glass card), Toxic message (heavy_blur red tint overlaid, warning icon, 'Toxic - Hidden' text)."
+    },
+    "growth_feed": {
+      "layout": "ScrollView",
+      "cards": "Job card (Product Design Lead) + Mentor Match card (Sarah Chen avatar, 'Connect' button, 'Power Phase Sync' gradient pill)."
+    },
+    "wellness_hub_modal": {
+      "background": "wellness_coral_bg image absolute fill",
+      "layout": "Centered overlay",
+      "content": "Massive circular progress ring (Score: 72), two soft-glass AI insight cards floating below."
+    }
+  },
+  "images": {
+    "obsidian_glass_bg": "local_gradient:#0D0B14->#14101F",
+    "wellness_coral_bg": "local_gradient:#2A1020->#1A0A18->#0D0B14",
+    "mentor_sarah": "https://images.unsplash.com/photo-1758600587839-56ba05596c69?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBhc2lhbiUyMHdvbWFuJTIwcG9ydHJhaXQlMjBoZWFkc2hvdHxlbnwwfHx8fDE3NzY4Njg4NjR8MA&ixlib=rb-4.1.0&q=85",
+    "dark_map": "https://images.unsplash.com/photo-1768270946541-c3e1cfdf80f9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxkYXJrJTIwbWFwJTIwbmlnaHQlMjBjaXR5JTIwc3RyZWV0fGVufDB8fHx8MTc3Njg2ODg4MXww&ixlib=rb-4.1.0&q=85"
+  },
+  "testing": {
+    "attributes_required": true,
+    "instructions": "Ensure all touchable elements (buttons, cards, inputs) have a data-testid attribute for automated testing. Example: data-testid='sos-button', data-testid='wellness-badge'."
+  }
+}

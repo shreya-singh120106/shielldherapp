@@ -1,42 +1,48 @@
-# ShieldHer — Frontend
+# 🛡️ ShieldHer — Frontend
 
-React Native mobile application built with Expo SDK 54 and TypeScript.
+### 🚀 Run the Prototype
 
-## Setup
+To experience ShieldHer instantly without manual configuration, follow these steps:
 
+#### 1. Via Expo Go (Fastest)
+1. Install **Expo Go** from the [Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent) or [App Store](https://apps.apple.com/app/expo-go/id982107779).
+2. Open the following link on your mobile device:
+   **[Launch ShieldHer Prototype](https://u.expo.dev/b99b6f0e-c27b-41d8-8966-e3a570506425?channel-name=production)**
+3. Alternatively, you can view all build artifacts and APKs here:
+   **[Build & APK Dashboard](https://expo.dev/accounts/shreya_singh4593/projects/shieldher/builds)**
+
+#### 2. Local Development Setup
+If you want to run the project in your terminal and generate your own local QR code:
 ```bash
 npm install
 npx expo start
 ```
+*This will generate a QR code in your terminal which you can scan with the Expo Go app.*
 
-## Project Structure
+---
+
+### ⚠️ Testing Notes
+- **Network**: Ensure your phone and laptop are on the same Wi-Fi if testing locally.
+- **Backend**: The prototype currently connects to the production safety engine. 🛡️
+- **Stability**: If the app fails to load, check your internet connection.
+
+---
+
+### Project Structure
 
 ```
 app/
 ├── _layout.tsx          # Root layout with desktop frame
-├── index.tsx            # Animated splash screen (2 scenes)
+├── index.tsx            # Animated splash screen
 ├── wellness.tsx         # Wellness Hub modal
 └── (tabs)/
     ├── _layout.tsx      # Custom glassmorphic tab bar
     ├── index.tsx        # Dashboard + Smart SOS
-    ├── travel.tsx       # Travel Shield (dynamic safety engine)
-    ├── cyber.tsx        # Cyber Shield (AI inbox scanner)
-    └── growth.tsx       # Growth Hub (jobs + mentors)
-
-src/
-├── theme.ts             # Design tokens & color system
-├── GlassCard.tsx        # Glassmorphism card component
-├── PressableScale.tsx   # Haptic-feedback pressable
-└── StatusBarFake.tsx    # Web-only status bar for desktop frame
+    ├── travel.tsx       # Travel Shield
+    ├── cyber.tsx        # Cyber Shield
+    └── growth.tsx       # Growth Hub
 ```
 
-## Build
+---
 
-See [BUILD_GUIDE.md](./BUILD_GUIDE.md) for Android APK/AAB build instructions.
-
-## Design System
-
-- **Theme**: Ultra-modern glassmorphism on obsidian (#0D0B14)
-- **Accents**: Neon green (#00FF9C), Cyber blue (#00E5FF), Wellness coral (#FF758F), SOS red (#FF3B30)
-- **Typography**: System fonts with precise weight/spacing hierarchy
-- **Motion**: Spring-physics scale animations, looping pulse rings, slide-up modals
+**ShieldHer © 2025. One platform. Three shields. Zero compromise.**

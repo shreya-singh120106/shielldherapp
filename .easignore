@@ -1,0 +1,17 @@
+# Ignore everything by default
+/*
+
+# But keep the frontend and readme
+!/frontend/
+!/README.md
+!/app.json
+!/package.json
+
+# Standard ignore items for the items we do keep
+node_modules/
+.expo/
+.next/
+dist/
+build/
+*.log
+.metro-cache/

@@ -24,26 +24,35 @@
 
 <div align="center">
 
-Scan the QR code below using the **Expo Go** app (Android) or your **Camera app** (iOS) to experience the ShieldHer interface live on your device.
+### 🚀 Run the Prototype
 
-<br />
+To experience ShieldHer instantly without manual configuration, follow these steps:
 
-| Launch Instant Prototype | Reliable Build Options |
-| :--- | :--- |
-| <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=exp://u.expo.dev/b99b6f0e-c27b-41d8-8966-e3a570506425?channel-name=production&color=00F0FF&bgcolor=0D0B14" width="220" style="border-radius: 20px; border: 2px solid #00F0FF; padding: 10px;" /> | <br /> [![Expo Go](https://img.shields.io/badge/Open_in-Expo_Go-00F0FF?style=for-the-badge&logo=expo&logoColor=white)](https://u.expo.dev/b99b6f0e-c27b-41d8-8966-e3a570506425?channel-name=production) <br /><br /> [![Direct APK](https://img.shields.io/badge/Download-Direct_APK-00FF66?style=for-the-badge&logo=android&logoColor=white)](https://expo.dev/accounts/shreya_singh4593/projects/shieldher/builds) <br /><br /> *Scan with Camera (iOS) or Expo Go (Android)* |
+#### 1. Via Expo Go (Fastest)
+1. Install **Expo Go** from the [Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent) or [App Store](https://apps.apple.com/app/expo-go/id982107779).
+2. Open the following link on your mobile device:
+   **[Launch ShieldHer Prototype](https://u.expo.dev/b99b6f0e-c27b-41d8-8966-e3a570506425?channel-name=production)**
+3. Alternatively, you can view all build artifacts and APKs here:
+   **[Build & APK Dashboard](https://expo.dev/accounts/shreya_singh4593/projects/shieldher/builds)**
 
-**[View Full Project Dashboard](https://expo.dev/accounts/shreya_singh4593/projects/shieldher/updates/production)**
+#### 2. Local Development Setup
+If you want to run the project in your terminal and generate your own local QR code:
+```bash
+git clone https://github.com/shreya-singh120106/shielldherapp.git
+cd shielldherapp/frontend
+npm install
+npx expo start
+```
+*This will generate a QR code in your terminal which you can scan with the Expo Go app.*
 
 ---
 
-This project is deployed using Expo for instant testing.
+### ⚠️ Testing Notes
+- **Network**: Ensure your phone and laptop are on the same Wi-Fi if testing locally.
+- **Backend**: The prototype currently connects to the production safety engine. 🛡️
+- **Stability**: If the app fails to load, check your internet connection or the [Expo Status](https://status.expo.dev/).
 
-- **Scan QR** to run live app
-- **Works on Android/iOS** via Expo Go
-- **No installation** required
-
-⚠️ *If loading fails, ensure a stable internet connection.*
-
+---
 </div>
 
 </div>
