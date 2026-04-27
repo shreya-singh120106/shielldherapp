@@ -26,19 +26,19 @@
 
 ### 🚀 Run the Prototype
 
-To experience ShieldHer instantly without manual configuration, follow these steps:
+#####To experience ShieldHer instantly without manual configuration, follow these steps:
 
-#### 1. Via Expo Go (Fastest)
-1. Install **Expo Go** from the [Play Store]
-    2. Local Development Setup
-3. run the project in your terminal and generate your own local QR code:
+1. Via Expo Go (Fastest)
+2. Install **Expo Go** from the [Play Store]
+3. Local Development Setup
+4. run the project in your terminal and generate your own local QR code:
 ```bash
-git clone https://github.com/shreya-singh120106/shielldherapp.git
-cd shielldherapp/frontend
-npm install
-npx expo start
+                     git clone https://github.com/shreya-singh120106/shielldherapp.git
+                                           cd shielldherapp/frontend
+                                                npm install
+                                               npx expo start
 ```
-*This will generate a QR code in your terminal which you can scan with the Expo Go app.*
+          *This will generate a QR code in your terminal which you can scan with the Expo Go app.*
 
 ---
 
