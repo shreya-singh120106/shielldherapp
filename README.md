@@ -30,9 +30,9 @@ Scan the QR code below using the **Expo Go** app (Android) or your **Camera app*
 
 | Launch Instant Prototype | Reliable Build Options |
 | :--- | :--- |
-| <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://expo.dev/@shreya_singh4593/shieldher&color=00F0FF&bgcolor=0D0B14" width="220" style="border-radius: 20px; border: 2px solid #00F0FF; padding: 10px;" /> | <br /> [![Expo Go](https://img.shields.io/badge/Open_in-Expo_Go-00F0FF?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/@shreya_singh4593/shieldher) <br /><br /> [![Direct APK](https://img.shields.io/badge/Download-Direct_APK-00FF66?style=for-the-badge&logo=android&logoColor=white)](https://expo.dev/accounts/shreya_singh4593/projects/shieldher/builds) <br /><br /> *Building the latest shield...* |
+| <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=exp://u.expo.dev/b99b6f0e-c27b-41d8-8966-e3a570506425?channel-name=production&color=00F0FF&bgcolor=0D0B14" width="220" style="border-radius: 20px; border: 2px solid #00F0FF; padding: 10px;" /> | <br /> [![Expo Go](https://img.shields.io/badge/Open_in-Expo_Go-00F0FF?style=for-the-badge&logo=expo&logoColor=white)](https://u.expo.dev/b99b6f0e-c27b-41d8-8966-e3a570506425?channel-name=production) <br /><br /> [![Direct APK](https://img.shields.io/badge/Download-Direct_APK-00FF66?style=for-the-badge&logo=android&logoColor=white)](https://expo.dev/accounts/shreya_singh4593/projects/shieldher/builds) <br /><br /> *Scan with Camera (iOS) or Expo Go (Android)* |
 
-**[View Full Project Dashboard](https://expo.dev/@shreya_singh4593/shieldher)**
+**[View Full Project Dashboard](https://expo.dev/accounts/shreya_singh4593/projects/shieldher/updates/production)**
 
 ---
 
