@@ -29,14 +29,9 @@
 To experience ShieldHer instantly without manual configuration, follow these steps:
 
 #### 1. Via Expo Go (Fastest)
-1. Install **Expo Go** from the [Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent) or [App Store](https://apps.apple.com/app/expo-go/id982107779).
-2. Open the following link on your mobile device:
-   **[Launch ShieldHer Prototype](https://u.expo.dev/b99b6f0e-c27b-41d8-8966-e3a570506425?channel-name=production)**
-3. Alternatively, you can view all build artifacts and APKs here:
-   **[Build & APK Dashboard](https://expo.dev/accounts/shreya_singh4593/projects/shieldher/builds)**
-
-#### 2. Local Development Setup
-If you want to run the project in your terminal and generate your own local QR code:
+1. Install **Expo Go** from the [Play Store]
+    2. Local Development Setup
+3. run the project in your terminal and generate your own local QR code:
 ```bash
 git clone https://github.com/shreya-singh120106/shielldherapp.git
 cd shielldherapp/frontend
